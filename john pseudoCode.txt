@@ -1,0 +1,60 @@
+========== RPS GAME ==========
+
+HTML
+====
+
+I will need to create a page with 4 buttons (rock, paper, scissors, Bonus: random)
+
+
+JS
+==
+Array with Rock Paper Scissors
+
+    const rpsOpts = ["rock","paper","scissors"]
+
+Player scores
+
+    userScore = "";
+    compScore = "";
+
+Need 2 Players inputs ( AIvsAI || AIvsHUM )
+
+    userInput = rpsOpts[indexChoice];
+
+    document.getElementById("rps choice").onclick = function() {indexChoice()};
+
+    let indexChoice = () => {
+        document.getElementById("rps choice");
+    }
+
+    let x = Math.floor(Math.random() * 3) + 1;
+
+    compInput = rpsOpts[y];
+    let y = Math.floor(Math.random() * 3) + 1;
+
+
+Need a random gen for the AI's to make a choices or options for a human or both
+
+    let x = Math.floor(Math.random() * 3) + 1;
+
+    compInput = rpsOpts[y];
+    let y = Math.floor(Math.random() * 3) + 1;
+
+
+Create conditional with IF to check the results
+
+    if (rock && scissors){
+         alert("you win");
+    }
+
+    else if (scissors && paper) {
+        alert("you win");
+    }
+
+    else if (paper && rock) {
+        alert("you win");
+    }
+
+    else () {
+        alert("you lose");
+    }
